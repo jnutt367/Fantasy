@@ -1,2 +1,18 @@
 gsap.from("#cartoonicorn", { stroke: "black", opacity: 0, duration: 3, scale: 0, strokeWidth: 10 })
 gsap.to("#fairy", { opacity: 0.5, fill: "gold" })
+gsap.to("#fairy", { opacity: 1, fill: "yellow", repeat: -1 }, 2)
+gsap.to("#unicorn", { rotate: -5, transformOrigin: "50% 50%", repeat: 4 })
+
+let unicornAnimate = gsap.timeline()
+
+.to("#hair1", { duration: 4, fill: "purple", repeat: -1 })
+    .to("#hair1", { duration: 5, fill: "green", repeat: -1 })
+    .to("#hair2", { duration: 3, fill: "orange", repeat: -1 })
+    .to("#hair3", { duration: 5, fill: "red", repeat: -1 })
+    .to("#hair4", { duration: 2, fill: "violet", repeat: -1 }, 2)
+    .to("#hair5", { duration: 6, fill: "brown", repeat: -1 })
+    .to("#horn1", { duration: 5, fill: "green", repeat: -1 }, 2)
+    .to("#horn2", { duration: 3, fill: "orange", repeat: -1 }, 1)
+    .to("#horn3", { duration: 5, fill: "red", repeat: -1 })
+    .to("#horn4", { duration: 2, fill: "violet", repeat: -1 }, 2)
+    .to("#horn5", { duration: 6, fill: "brown", repeat: -1 })
